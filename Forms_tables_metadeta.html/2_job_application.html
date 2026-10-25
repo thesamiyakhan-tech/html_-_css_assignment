@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form - Samiya Khan</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f1f5f9; margin: 0; color: #1e293b; }
+        header { background: #0f172a; color: white; text-align: center; padding: 25px; }
+        header img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #38bdf8; }
+        main { width: 92%; max-width: 850px; margin: 30px auto; background: white; padding: 30px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h2 { border-left: 5px solid #0ea5e9; padding-left: 12px; margin-top: 35px; }
+        fieldset { border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; margin-bottom: 25px; }
+        legend { font-weight: bold; color: #0f172a; padding: 0 10px; }
+        label { display: block; margin-top: 14px; font-weight: 500; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+        input[type="radio"], input[type="checkbox"], input[type="range"], input[type="color"] { width: auto; }
+        .inline { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 8px; }
+        .inline label { margin-top: 0; font-weight: normal; display: flex; align-items: center; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        button, input[type="submit"], input[type="reset"], input[type="button"] { padding: 12px 25px; border: none; border-radius: 25px; cursor: pointer; font-size: 15px; margin-top: 10px; }
+        input[type="submit"] { background: #0ea5e9; color: white; width: 100%; }
+        input[type="reset"] { background: #64748b; color: white; width: 100%; }
+        input[type="button"] { background: #f1f5f9; border: 1px solid #cbd5e1; }
+        footer { text-align: center; padding: 20px; color: #64748b; }
+        @media(max-width:700px){ .two-col{grid-template-columns:1fr} }
+    </style>
+</head>
+<body>
+
+    <header>
+        <figure style="margin:0;">
+            <img src="company-logo.png" alt="Company logo for Tech Solutions Pvt Ltd Bareilly - hiring web developers">
+            <figcaption>Tech Solutions Pvt. Ltd, Bareilly - Hiring</figcaption>
+        </figure>
+        <h1>Job Application Form</h1>
+        <p>Post: Junior Web Developer (Fresher)</p>
+    </header>
+
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- HIDDEN INPUT -->
+            <input type="hidden" name="jobId" value="WEB-DEV-2026-MEERUT">
+
+            <!-- 1. PERSONAL -->
+            <fieldset>
+                <legend>1. Personal Details</legend>
+                
+                <label for="fullName">Full Name (text) *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Samiya Khan" required>
+
+                <div class="two-col">
+                    <div>
+                        <label for="email">Email (email) *</label>
+                        <input type="email" id="email" name="email" placeholder="samkhanxyzhttp@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone (tel) *</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit" required>
+                    </div>
+                </div>
+
+                <label for="password">Create Password (password) *</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+
+                <label for="website">Portfolio Website (url)</label>
+                <input type="url" id="website" name="website" placeholder="https://yourportfolio.com">
+
+                <label for="search">How did you find us? (search)</label>
+                <input type="search" id="search" name="search" placeholder="Search - e.g. LinkedIn, College">
+
+                <div class="two-col">
+                    <div>
+                        <label for="dob">Date of Birth (date) *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div>
+                        <label for="age">Age (number)</label>
+                        <input type="number" id="age" name="age" min="18" max="40" placeholder="18-40">
+                    </div>
+                </div>
+
+                <label>Gender (radio)</label>
+                <div class="inline">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+
+                <label for="photo">Profile Photo (file - image)</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+            </fieldset>
+
+            <!-- 2. JOB SPECIFIC - ALL REMAINING INPUTS -->
+            <fieldset>
+                <legend>2. Job Preferences - Every Input Type</legend>
+
+                <div class="two-col">
+                    <div>
+                        <label for="interviewTime">Preferred Interview Time (time)</label>
+                        <input type="time" id="interviewTime" name="interviewTime">
+                    </div>
+                    <div>
+                        <label for="interviewDateTime">Available From (datetime-local)</label>
+                        <input type="datetime-local" id="interviewDateTime" name="interviewDateTime">
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div>
+                        <label for="joiningMonth">Joining Month (month)</label>
+                        <input type="month" id="joiningMonth" name="joiningMonth">
+                    </div>
+                    <div>
+                        <label for="week">Available Week (week)</label>
+                        <input type="week" id="week" name="week">
+                    </div>
+                </div>
+
+                <label for="favColor">Favourite Theme Color (color) - For your dashboard</label>
+                <input type="color" id="favColor" name="favColor" value="#0ea5e9">
+
+                <label for="skillRange">HTML/CSS Skill Level (range) - 0 to 10</label>
+                <div style="display:flex; gap:10px; align-items:center;">
+                    <span>0</span>
+                    <input type="range" id="skillRange" name="skillRange" min="0" max="10" value="7" style="flex:1;">
+                    <span>10</span>
+                    <output id="rangeValue">7</output>
+                </div>
+
+                <label for="resume">Upload Resume (file - pdf/doc)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                <label for="city">Preferred Location (datalist - text + datalist)</label>
+                <input list="cities" id="city" name="city" placeholder="Type or select">
+                <datalist id="cities">
+                    <option value="Meerut">
+                    <option value="Delhi NCR">
+                    <option value="Noida">
+                    <option value="Remote">
+                </datalist>
+
+            </fieldset>
+
+            <!-- 3. EDUCATION & SKILLS -->
+            <fieldset>
+                <legend>3. Education & Skills</legend>
+
+                <label for="qualification">Highest Qualification (select)</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">-- Select --</option>
+                    <option value="12th">12th Pass</option>
+                    <option value="bca(ai)" selected>BCA(AI) Pursuing</option>
+                    <option value="bca(ai)-complete">BCA(AI) Complete</option>
+                    <option value="mca(ai)">MCA(AI)</option>
+                </select>
+
+                <label>Skills (checkbox)</label>
+                <div class="inline">
+                    <label><input type="checkbox" name="skills" value="html"> HTML5</label>
+                    <label><input type="checkbox" name="skills" value="css"> CSS3</label>
+                    <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="git"> GitHub</label>
+                </div>
+
+                <label for="about">About Yourself (textarea)</label>
+                <textarea id="about" name="about" rows="4" placeholder="I am BCA(AI)  1st sem student from Invertis University Bareilly..."></textarea>
+            </fieldset>
+
+            <!-- BUTTON TYPES -->
+            <fieldset>
+                <legend>4. Declaration</legend>
+                <label><input type="checkbox" name="terms" required> I agree to terms and conditions *</label>
+                
+                <div class="two-col" style="margin-top:20px;">
+                    <input type="submit" value="Submit Application (submit)">
+                    <input type="reset" value="Reset Form (reset)">
+                </div>
+                <input type="button" value="Click for Help (button)" onclick="alert('Fill all * fields. Email: hr@techbareilly.com')">
+
+                <!-- IMAGE INPUT TYPE -->
+                <label style="margin-top:20px;">Or Click Image to Submit (image type)</label>
+                <input type="image" src="submit-button.png" alt="Submit button image with arrow icon that submits the job application form" width="150" style="border:1px solid #e2e8f0; border-radius:8px; margin-top:8px;">
+
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Every Input Type Used: text, email, password, tel, url, search, number, date, time, datetime-local, month, week, color, range, file, radio, checkbox, hidden, select, textarea, datalist, submit, reset, button, image</p>
+        <p>&copy; <time datetime="2026">2026</time> Samiya Khan | Job Application Form</p>
+    </footer>
+
+    <script>
+        // Range value show
+        const range = document.getElementById('skillRange');
+        const output = document.getElementById('rangeValue');
+        range.addEventListener('input', () => output.textContent = range.value);
+    </script>
+
+</body>
+</html>

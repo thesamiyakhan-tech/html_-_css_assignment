@@ -1,0 +1,43 @@
+/* Design Tokens - CSS Variables */
+:root {
+  /* Colours */
+  --primary: #1a2e44;
+  --secondary: #ff6b4a;
+  --background: #fdf8f2;
+  --text: #333d4a;
+  --white: #ffffff;
+
+  /* Font Sizes */
+  --fs-small: 14px;
+  --fs-base: 16px;
+  --fs-medium: 18px;
+  --fs-large: 24px;
+  --fs-xlarge: 36px;
+
+  /* Font Family */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Example Use */
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  font-size: var(--fs-xlarge);
+}
+
+button {
+  background: var(--secondary);
+  color: var(--white);
+  font-size: var(--fs-small);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+}

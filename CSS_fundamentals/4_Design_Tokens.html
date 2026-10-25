@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Tokens Demo</title>
+
+  <link rel="stylesheet" href="4-Design_Tokens.css">
+
+  <style>
+    body {
+      background: var(--background);
+      padding: 30px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      color: var(--primary);
+      font-size: var(--fs-xlarge);
+    }
+
+    p {
+      font-family: var(--font-body);
+      color: var(--text);
+      font-size: var(--fs-medium);
+    }
+
+    button {
+      background: var(--secondary);
+      color: var(--white);
+      font-size: var(--fs-base);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Linked Successfully!</h1>
+    <p>Ye colours aur font sizes 4-Design_Tokens.css file se aa rahe hain.</p>
+    <button>Primary Button</button>
+  </div>
+
+</body>
+
+</html>

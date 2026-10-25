@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+
+.dashboard{
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr;
+  grid-template-rows: 70px 1fr 1fr 60px;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "sidebar card1 card2"
+    "footer footer footer";
+  gap: 15px;
+  min-height: 100vh;
+  padding: 15px;
+  background: #f1f5f9;
+}
+
+.header{grid-area: header;background:#111;color:white;display:flex;align-items:center;padding:0 20px;border-radius:10px;font-size:20px;font-weight:bold}
+.sidebar{grid-area: sidebar;background:white;border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:15px}
+.sidebar a{text-decoration:none;color:#333;padding:10px;border-radius:8px}
+.sidebar a:hover{background:#f1f5f9}
+.main{grid-area: main;background:white;border-radius:10px;padding:25px}
+.card1{grid-area: card1;background:#6366f1;color:white;border-radius:10px;padding:25px}
+.card2{grid-area: card2;background:#22c55e;color:white;border-radius:10px;padding:25px}
+.footer{grid-area: footer;background:white;border-radius:10px;display:flex;justify-content:center;align-items:center;color:#777}
+
+@media(max-width:800px){
+  .dashboard{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "card1"
+      "card2"
+      "footer";
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="header">📊 My Dashboard</div>
+  <div class="sidebar">
+    <a href="#">🏠 Home</a>
+    <a href="#">📈 Analytics</a>
+    <a href="#">🛒 Orders</a>
+    <a href="#">👤 Profile</a>
+    <a href="#">⚙️ Settings</a>
+  </div>
+  <div class="main">
+    <h2>Main Content</h2><br>
+    <p>This area uses named grid areas. Header, Sidebar, Main, Cards and Footer all placed with grid-area.</p>
+  </div>
+  <div class="card1"><h3>Revenue</h3><p style="font-size:30px;margin-top:10px">$12,450</p></div>
+  <div class="card2"><h3>Users</h3><p style="font-size:30px;margin-top:10px">1,254</p></div>
+  <div class="footer">© 2026 Dashboard - Grid Areas</div>
+</div>
+
+</body>
+</html>

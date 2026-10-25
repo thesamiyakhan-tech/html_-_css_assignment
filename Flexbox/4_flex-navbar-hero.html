@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samkhan - Flexbox</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 50px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky;top:0;
+}
+.logo{font-size:22px;font-weight:bold} .logo span{color:#6366f1}
+.nav-links{display:flex;list-style:none;gap:30px}
+.nav-links a{text-decoration:none;color:#333;font-weight:500}
+.btn{padding:10px 22px;background:#6366f1;color:white;border:none;border-radius:25px;cursor:pointer}
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:70px 50px;
+  background:#f8f8ff;
+  gap:40px;
+  min-height:85vh;
+}
+.hero-text{flex:1;max-width:550px;display:flex;flex-direction:column;gap:20px}
+.hero-text h1{font-size:52px;line-height:1.1}
+.hero-text h1 span{color:#6366f1}
+.hero-text p{color:#666;font-size:18px}
+.hero-btns{display:flex;gap:15px}
+.hero-img{flex:1;display:flex;justify-content:center}
+.hero-img img{width:90%;max-width:500px;border-radius:20px}
+
+@media(max-width:900px){
+  .hero{flex-direction:column;text-align:center}
+  .hero-btns{justify-content:center}
+  .navbar{padding:15px 20px} .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Flex<span>Site</span></div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+  </ul>
+  <button class="btn">Get Started</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Build Beautiful Websites with <span>Flexbox</span></h1>
+    <p>Learn how to create modern, responsive layouts using only Flexbox. Simple, powerful and clean code.</p>
+    <div class="hero-btns">
+      <button class="btn">Start Learning</button>
+      <button class="btn" style="background:white;color:#111;border:1px solid #ddd">Watch Demo</button>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://picsum.photos/600/400?random=10" alt="hero">
+  </div>
+</section>
+
+</body>
+</html>

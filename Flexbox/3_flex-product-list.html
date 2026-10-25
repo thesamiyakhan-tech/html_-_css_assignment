@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing - Flex Wrap</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#f3f4f6;padding:30px}
+h1{text-align:center;margin-bottom:30px}
+.product-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  justify-content:center;
+}
+.card{
+  width:260px;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:18px}
+.price{color:#6366f1;font-weight:bold;font-size:16px}
+.card-body button{margin-top:auto;padding:10px;background:#111;color:white;border:none;border-radius:8px;cursor:pointer}
+.card-body button:hover{background:#6366f1}
+</style>
+</head>
+<body>
+
+<h1>Our Products</h1>
+
+<div class="product-container">
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=1">
+    <div class="card-body">
+      <h3>Wireless Headphone</h3>
+      <p>High quality sound</p>
+      <div class="price">Rs. 1,499</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=2">
+    <div class="card-body">
+      <h3>Smart Watch</h3>
+      <p>Stay fit & connected</p>
+      <div class="price">Rs. 2,999</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=3">
+    <div class="card-body">
+      <h3>Running Shoes</h3>
+      <p>Comfort for daily run</p>
+      <div class="price">Rs. 1,999</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=4">
+    <div class="card-body">
+      <h3>Backpack</h3>
+      <p>Waterproof & stylish</p>
+      <div class="price">Rs. 899</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=5">
+    <div class="card-body">
+      <h3>Sunglasses</h3>
+      <p>UV Protection</p>
+      <div class="price">Rs. 599</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=6">
+    <div class="card-body">
+      <h3>Bluetooth Speaker</h3>
+      <p>Loud & clear bass</p>
+      <div class="price">Rs. 1,199</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

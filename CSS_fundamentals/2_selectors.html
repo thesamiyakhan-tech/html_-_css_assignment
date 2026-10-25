@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Four Selectors</title>
+<style>
+
+  /* 1. ELEMENT SELECTOR  */
+  p {
+    color: #444;
+    font-size: 16px;
+  }
+
+  /* 2. CLASS SELECTOR  */
+  .box {
+    background-color: #e8f4f8;
+    border: 1px solid #3498db;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  /* 3. ID SELECTOR  */
+  #main-heading {
+    color: #2c3e50;
+    text-align: center;
+    font-family: Arial;
+    border-bottom: 3px solid #ff7a5c;
+    padding-bottom: 10px;
+  }
+
+  /* 4. ATTRIBUTE SELECTOR */
+  a[target="_blank"] {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /*  PSEUDO-CLASS SELECTOR */
+  a:hover {
+    text-decoration: underline;
+  }
+
+</style>
+</head>
+<body>
+
+<h1 id="main-heading">Four Selector Types</h1>
+
+<div class="box">
+  <h3>1. ID Selector (#main-heading)</h3>
+  <p>Ye heading ID selector se styled hai. ID unique hoti hai.</p>
+</div>
+
+<div class="box">
+  <h3>2. Class Selector (.box)</h3>
+  <p>Ye dono box class selector se bane hain. Class ko hum baar-baar use kar sakte hain.</p>
+</div>
+
+<div class="box">
+  <h3>3. Element Selector (p)</h3>
+  <p>Ye saare paragraphs element selector se styled hain.</p>
+  <p>Har p tag ka color same hoga.</p>
+</div>
+
+<div class="box">
+  <h3>4. Attribute Selector (a[target="_blank"])</h3>
+  <a href="https://google.com" target="_blank">Ye link red hai (target blank hai)</a>
+  <br><br>
+  <a href="https://google.com">Ye link normal hai (target blank nahi hai)</a>
+</div>
+
+</body>
+</html>

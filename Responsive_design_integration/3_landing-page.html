@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>43 - Grid + Flexbox Landing</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+
+/* FLEXBOX USE - Navbar & Buttons & Footer */
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 50px;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+nav .logo{font-weight:bold;font-size:22px}
+nav .links{display:flex;gap:30px;list-style:none}
+nav .links a{text-decoration:none;color:#333;font-weight:600}
+.btn-group{display:flex;gap:15px}
+.btn{padding:12px 22px;border-radius:8px;border:none;font-weight:bold;cursor:pointer}
+.btn-dark{background:#111;color:white}
+.btn-light{background:white;border:1px solid #111}
+
+/* GRID USE - Hero & Features */
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:60px 50px;background:#f9fafb}
+.hero-text h1{font-size:48px;line-height:1.1}
+.hero-text h1 span{color:#6366f1}
+.hero-text p{margin:20px 0;color:#555;font-size:18px}
+.hero img{width:100%;border-radius:16px}
+
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:50px;background:white}
+.box{background:#f8f8f8;padding:25px;border-radius:12px;text-align:center}
+
+footer{display:flex;justify-content:center;align-items:center;padding:20px;background:#111;color:white}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">ShopGrid.</div>
+  <ul class="links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Build With <span>Grid & Flexbox</span></h1>
+    <p>This landing page uses Grid for layout and Flexbox for alignment as per task 43.</p>
+    <div class="btn-group">
+      <button class="btn btn-dark">Shop Now</button>
+      <button class="btn btn-light">Learn More</button>
+    </div>
+  </div>
+  <div><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"></div>
+</div>
+
+<div class="features">
+  <div class="box"><h3>Flexbox - Nav</h3><p>Navbar is made with display:flex</p></div>
+  <div class="box"><h3>Grid - Hero</h3><p>Hero section is grid 1fr 1fr</p></div>
+  <div class="box"><h3>Both Used</h3><p>Buttons are flex, Features are grid</p></div>
+</div>
+
+<footer>Task 43 - Grid & Flexbox Used Appropriately</footer>
+
+</body>
+</html>

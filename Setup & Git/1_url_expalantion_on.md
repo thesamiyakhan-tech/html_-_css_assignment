@@ -1,0 +1,3 @@
+Q1. Write a one-paragraph explanation of what happens between typing a URL and seeing the page.
+
+Ans. When you type a URL like www.google.com and press Enter, the browser first performs a DNS lookup to find the IP address of the server, then establishes a TCP connection and a secure TLS handshake if the site uses HTTPS. After that, the browser sends an HTTP request to the server, and the server sends back an HTTP response containing HTML, CSS, and JavaScript files. Finally, the browser parses the HTML, builds the DOM, applies CSS, executes JavaScript, and renders the complete webpage on your screen.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Samiya Khan</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f6f8; color: #1f2937; }
+        header, footer { background: #111827; color: white; padding: 20px; text-align: center; }
+        main { width: 85%; margin: 30px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 25px; }
+        section { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 25px; }
+        h2 { border-left: 5px solid #0ea5e9; padding-left: 12px; }
+        nav a { color: #38bdf8; margin: 0 10px; text-decoration: none; }
+        figure img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+        ul { padding-left: 20px; }
+        @media(max-width:768px){ main { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HEADER - Site ka header -->
+    <header>
+        <figure>
+            <img src="profile.jpg" alt="Samiya Khan">
+            <figcaption><strong>Samiya Khan</strong> - BCA(AI) Student</figcaption>
+        </figure>
+        <h1>Resume</h1>
+        <nav aria-label="Resume navigation">
+            <a href="#summary">Summary</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 2. MAIN - Saara main content -->
+    <main>
+        <!-- Left Column -->
+        <div>
+            <!-- SUMMARY as section -->
+            <section id="summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading">Professional Summary</h2>
+                <article>
+                    <p>Aspiring Web Developer currently pursuing BCA(AI) 1st Semester at Invertis University, Bareilly. Passionate about building accessible and semantic web pages.</p>
+                </article>
+            </section>
+
+            <!-- EDUCATION as section with article for each degree -->
+            <section id="education" aria-labelledby="education-heading">
+                <h2 id="education-heading">Education</h2>
+                <article>
+                    <h3>BCA(AI) - Bachelor of Computer Applications (Artificial Intelligence)</h3>
+                    <p><time datetime="2025-08">Oct 2026</time> - Present | Invertis University, Bareilly</p>
+                </article>
+                <article>
+                    <h3>12th - CBSE</h3>
+                    <p><time datetime="2025-05">May 2026</time> | 85% | Bishop conrad School</p>
+                </article>
+            </section>
+
+            <!-- EXPERIENCE as section -->
+            <section id="experience" aria-labelledby="experience-heading">
+                <h2 id="experience-heading">Projects & Experience</h2>
+                <article>
+                    <h3>Portfolio Website with Internal Navigation</h3>
+                    <p>Created a fully navigable portfolio using semantic HTML5 tags like <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;main&gt;</code>.</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- Right Column as ASIDE - secondary info -->
+        <aside>
+            <section id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills</h2>
+                <ul>
+                    <li>Semantic HTML5</li>
+                    <li>CSS3 & Responsive Design</li>
+                    <li>MS Office & GitHub</li>
+                </ul>
+            </section>
+
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <address>
+                    Email: <a href="samkhanxyzhttp@gmail.com">samkhanxyzhttp@gmail.com</a><br>
+                    Location: Bareilly, UP<br>
+                    Phone: +91 9834567345
+                </address>
+            </section>
+        </aside>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> Samiya Khan| Built with Semantic HTML5</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiya Khan - Portfolio</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f9fa; }
+        header { background: #111827; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; width: 85%; margin: auto; }
+        nav .logo { font-size: 22px; font-weight: bold; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { color: white; text-decoration: none; }
+        nav ul li a:hover { color: #38bdf8; }
+        section { width: 85%; margin: auto; padding: 60px 0; }
+        .hero { background: white; text-align: center; padding: 80px 0; }
+        .hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .hero span { color: #0ea5e9; }
+        .hero img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #0ea5e9; }
+        .btn { display: inline-block; background: #0ea5e9; color: white; padding: 10px 25px; text-decoration: none; border-radius: 25px; margin-top: 20px; }
+        h2 { font-size: 32px; border-left: 5px solid #0ea5e9; padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+        footer { background: #111827; color: #9ca3af; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">SAMIYA.KHAN</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <!-- 1. Profile Image - meaningful alt -->
+        <img src="profile.jpg" alt="Portrait photo of Samiya Khan, BCA(AI) student smiling in formal wear">
+        <h1>Hi, I'm <span>Samiya Khan</span></h1>
+        <p>BCA(AI) 1st Sem Student | Aspiring Web Developer | Bareilly</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a BCA(AI) student at Invertis University, Bareilly. I love to create clean and accessible websites.</p>
+        <!-- 2. About section illustration -->
+        <img src="about-illustration.jpg" alt="Illustration showing a student working on laptop with code on screen" style="width:400px; height:auto; margin-top:20px;">
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <!-- 3. Skill Icons with meaningful alt -->
+                <img src="html-logo.png" alt="HTML5 logo - markup language for web structure">
+                <h3>HTML5</h3><p>Semantic tags, Forms, Tables</p>
+            </div>
+            <div class="card">
+                <img src="css-logo.png" alt="CSS3 logo - styling language for web design">
+                <h3>CSS3</h3><p>Flexbox, Grid, Responsive Design</p>
+            </div>
+            <div class="card">
+                <img src="tools-icon.png" alt="Icon of coding tools like VS Code and GitHub">
+                <h3>Tools</h3><p>VS Code, GitHub, MS Office</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="project1.jpg" alt="Screenshot of personal introduction webpage with bio-data table">
+                <h3>Personal Introduction Page</h3>
+                <p>A simple page with my bio-data.</p>
+            </div>
+            <div class="card">
+                <img src="project2.jpg" alt="Screenshot of HTML code showing debugging and error fixing">
+                <h3>Buggy File Debugging</h3>
+                <p>Debugged a supplied buggy HTML file.</p>
+            </div>
+            <div class="card">
+                <img src="project3.jpg" alt="Screenshot of this portfolio page with navigation bar">
+                <h3>Portfolio Page</h3>
+                <p>Portfolio with internal navigation and alt attributes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="samkhanxyzhttp@gmial.com">
+        <h2>Contact</h2>
+        <div class="card">
+            <p><b>Email:</b> samkhanxyzhttp@gmail.com</p>
+            <p>Connect with me for web projects.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Samiya Khan | All Images have meaningful alt attributes for accessibility</p>
+    </footer>
+
+</body>
+</html>

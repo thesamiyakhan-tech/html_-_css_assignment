@@ -1,0 +1,13 @@
+# Setup Verification
+
+Node.js Check - Not Installed
+
+C:\Users\test> node -v
+'node' is not recognized
+
+C:\Users\test> npm -v
+'npm' is not recognized
+
+Action: Installing Node.js LTS from nodejs.org
+
+https://drive.google.com/file/d/1S9sKPKz_jdWwoJHOjQYNhPWXAo1SF5bh/view?usp=drive_link

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Grid Project</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#f1f5f9}
+.final-layout{
+  display:grid;
+  grid-template-columns:240px 1fr;
+  grid-template-rows:70px 1fr 60px;
+  grid-template-areas:"header header" "sidebar main" "footer footer";
+  min-height:100vh;
+}
+.header{grid-area:header;background:#111;color:white;display:flex;justify-content:space-between;align-items:center;padding:0 30px}
+.sidebar{grid-area:sidebar;background:white;padding:25px 20px;display:flex;flex-direction:column;gap:10px;border-right:1px solid #e5e7eb}
+.sidebar a{text-decoration:none;color:#444;padding:12px;border-radius:8px;cursor:pointer;display:block}
+.sidebar a.active,.sidebar a:hover{background:#111;color:white}
+.main{grid-area:main;padding:25px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;border-radius:14px;padding:15px;display:flex;flex-direction:column;gap:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.card img{width:100%;height:170px;object-fit:cover;border-radius:10px}
+.price{color:#16a34a;font-weight:bold}
+.card button{padding:9px;background:#6366f1;color:white;border:none;border-radius:7px;cursor:pointer}
+.section{display:none}
+.section.active{display:block}
+.footer{grid-area:footer;background:white;display:flex;justify-content:center;align-items:center;color:#888;border-top:1px solid #e5e7eb}
+@media(max-width:768px){.final-layout{grid-template-columns:1fr;grid-template-areas:"header" "sidebar" "main" "footer"}}
+</style>
+</head>
+<body>
+
+<div class="final-layout">
+  <div class="header"><h2>🛍️ ShopGrid</h2><div>Final Project</div></div>
+
+  <div class="sidebar">
+    <a id="link-dashboard" class="active" onclick="showSection('dashboard')">🏠 Dashboard</a>
+    <a id="link-products" onclick="showSection('products')">📦 Products Grid</a>
+    <a id="link-about" onclick="showSection('about')">ℹ️ About</a>
+    <a id="link-setting" onclick="showSection('setting')">⚙️ Settings</a>
+  </div>
+
+  <div class="main">
+    
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="section active">
+      <h1>Dashboard</h1><br>
+      <p>Welcome! Ye grid project auto-fit aur grid-areas se bana hai.</p><br>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px">
+        <div style="background:white;padding:20px;border-radius:12px"><h3>Total Products</h3><h2>6</h2></div>
+        <div style="background:white;padding:20px;border-radius:12px"><h3>Layout</h3><h2>Grid Areas</h2></div>
+        <div style="background:white;padding:20px;border-radius:12px"><h3>Responsive</h3><h2>Auto-Fit</h2></div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div id="products" class="section">
+      <h1>Products</h1><br>
+      <div class="products">
+        <div class="card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"><h4>Classic Shirt</h4><div class="price">$29</div><button>Buy Now</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400"><h4>Flower Pot</h4><div class="price">$19</div><button>Buy Now</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400"><h4>Water Bottles</h4><div class="price">$25</div><button>Buy Now</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400"><h4>Stylish Glasses</h4><div class="price">$45</div><button>Buy Now</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"><h4>Smart Mobile</h4><div class="price">$499</div><button>Buy Now</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400"><h4>Gold Rings</h4><div class="price">$199</div><button>Buy Now</button></div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+      <h1>About Us</h1><br>
+      <div style="background:white;padding:25px;border-radius:12px">
+        <p>Ye project CSS Grid sikhne ke liye banaya gaya hai.</p><br>
+        <p><b>Task 37:</b> Responsive Product Grid with auto-fit</p>
+        <p><b>Task 38:</b> Dashboard using named grid areas</p>
+        <p><b>Task 39:</b> Header + Sidebar + Grid layout</p><br>
+        <p>Created by Student - Final Submission 2025</p>
+      </div>
+    </div>
+
+    <!-- SETTING -->
+    <div id="setting" class="section">
+      <h1>Settings</h1><br>
+      <div style="background:white;padding:25px;border-radius:12px;display:flex;flex-direction:column;gap:15px;max-width:400px">
+        <label>Username: <input type="text" value="Student" style="padding:8px;width:100%;margin-top:5px"></label>
+        <label>Email: <input type="text" value="student@email.com" style="padding:8px;width:100%;margin-top:5px"></label>
+        <label>Theme: <select style="padding:8px;width:100%;margin-top:5px"><option>Light</option><option>Dark</option></select></label>
+        <button style="padding:10px;background:#111;color:white;border:none;border-radius:8px;cursor:pointer">Save Settings</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">© 2026 Final Grid Project</div>
+</div>
+
+<script>
+function showSection(name){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.sidebar a').forEach(a=>a.classList.remove('active'));
+  document.getElementById(name).classList.add('active');
+  document.getElementById('link-'+name).classList.add('active');
+}
+</script>
+
+</body>
+</html>

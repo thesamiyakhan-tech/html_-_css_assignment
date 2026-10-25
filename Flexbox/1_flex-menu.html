@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex Menu Bar</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box} body{font-family: 'Segoe UI', sans-serif}
+.navbar{display:flex;justify-content:space-between;align-items:center;background:#0f0f0f;color:white;padding:16px 40px;flex-wrap:wrap}
+.logo{font-size:24px;font-weight:bold;letter-spacing:1px} .logo span{color:#6366f1}
+.nav-links{display:flex;list-style:none;gap:30px} .nav-links a{color:#ccc;text-decoration:none;font-size:16px;transition:0.3s}
+.nav-links a:hover,.nav-links a.active{color:white;border-bottom:2px solid #6366f1;padding-bottom:4px}
+.hero{display:flex;justify-content:center;align-items:center;height:80vh;text-align:center;flex-direction:column;gap:15px}
+@media(max-width:700px){.navbar{flex-direction:column;gap:12px;padding:15px} .nav-links{gap:15px}}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Flex<span>Menu</span></div>
+  <ul class="nav-links">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+<h1 id="home">Welcome to Home Page</h1>
+<p id="about">We are a creative agency building responsive websites using Flexbox.</p>
+<p id="services">Our Services: Web Design, Development, SEO, Branding.</p>
+<p id="portfolio">Check our latest portfolio work - Modern & Clean.</p>
+<p id="contact">Contact us at: sam@flexmenu.com</p>
+</div>
+
+</body>
+</html>

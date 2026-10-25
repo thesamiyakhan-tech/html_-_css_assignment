@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{font-family:sans-serif; padding:20px; background:#fdf8f2;}
+  /* Ye sabse bahar wala margin dikhayega */
+  .margin-layer{
+    background:#fff3cd; /* Yellow - Margin */
+    padding:30px; /* Ye hi margin hai */
+    width:fit-content;
+    border:1px dashed #bba500;
+  }
+  /* Border */
+  .border-layer{
+    background:#ff6b4a; /* Orange - Border */
+    padding:5px; /* Ye border hai */
+  }
+  /* Padding */
+  .padding-layer{
+    background:#c3e6cb; /* Green - Padding */
+    padding:20px; /* Ye padding hai */
+  }
+  /* Content */
+  .content-layer{
+    background:#0d6efd; /* Blue - Content */
+    color:white;
+    width:200px; height:100px;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:bold;
+  }
+  .label{margin-top:20px; line-height:1.8;}
+</style>
+</head>
+<body>
+
+<h3>My Element - Box Model (Visible)</h3>
+
+<div class="margin-layer">
+  <div class="border-layer">
+    <div class="padding-layer">
+      <div class="content-layer">CONTENT 200x100</div>
+    </div>
+  </div>
+</div>
+
+<div class="label">
+  <span style="background:#fff3cd; padding:2px 10px;">⬜ MARGIN 30px - Bahar ka space</span><br>
+  <span style="background:#ff6b4a; color:white; padding:2px 10px;">⬜ BORDER 5px - Kinara</span><br>
+  <span style="background:#c3e6cb; padding:2px 10px;">⬜ PADDING 20px - Andar ka space</span><br>
+  <span style="background:#0d6efd; color:white; padding:2px 10px;">⬜ CONTENT 200x100 - Asli text</span>
+</div>
+
+</body>
+</html>

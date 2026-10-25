@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Grid with Header & Sidebar</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+
+.layout{
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar products";
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.header{
+  grid-area: header;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.header input{
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  width: 260px;
+  outline: none;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  background: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar h3{font-size:16px;margin-bottom:5px}
+.filter{display:flex;flex-direction:column;gap:8px}
+.filter label{font-size:14px;color:#555;display:flex;gap:8px;align-items:center}
+.sidebar button{padding:10px;background:#111;color:white;border:none;border-radius:8px;cursor:pointer;margin-top:10px}
+
+.products{
+  grid-area: products;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+.card{
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+.price{color:#16a34a;font-weight:bold}
+.card button{margin-top:auto;padding:9px;background:#6366f1;color:white;border:none;border-radius:7px;cursor:pointer}
+
+@media(max-width:768px){
+  .layout{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "products";
+  }
+  .header input{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <div class="header">
+    <div style="font-weight:bold;font-size:20px">🛍️ ShopGrid</div>
+    <input type="text" placeholder="Search products...">
+    <div>🛒 Cart (3)</div>
+  </div>
+
+  <div class="sidebar">
+    <div>
+      <h3>Category</h3>
+      <div class="filter">
+        <label><input type="checkbox" checked> Shirt</label>
+        <label><input type="checkbox"> Mobile</label>
+        <label><input type="checkbox"> Glasses</label>
+        <label><input type="checkbox"> Bottles</label>
+        <label><input type="checkbox"> Rings</label>
+      </div>
+    </div>
+    <div>
+      <h3>Price Range</h3>
+      <div class="filter">
+        <label><input type="radio" name="price" checked> Under $50</label>
+        <label><input type="radio" name="price"> $50 - $200</label>
+        <label><input type="radio" name="price"> Above $200</label>
+      </div>
+    </div>
+    <button>Apply Filters</button>
+  </div>
+
+  <div class="products">
+    <div class="card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"><h4>Classic Shirt</h4><p style="font-size:13px;color:#666">Cotton</p><div class="price">$29</div><button>Add to Cart</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400"><h4>Flower Pot</h4><p style="font-size:13px;color:#666">Ceramic</p><div class="price">$19</div><button>Add to Cart</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400"><h4>Water Bottles</h4><p style="font-size:13px;color:#666">Steel</p><div class="price">$25</div><button>Add to Cart</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400"><h4>Stylish Glasses</h4><p style="font-size:13px;color:#666">UV Protect</p><div class="price">$45</div><button>Add to Cart</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"><h4>Smart Mobile</h4><p style="font-size:13px;color:#666">5G Phone</p><div class="price">$499</div><button>Add to Cart</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400"><h4>Gold Rings</h4><p style="font-size:13px;color:#666">Designer</p><div class="price">$199</div><button>Add to Cart</button></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiya Khan| BCA(AI) Student Portfolio - Invertis University Bareilly</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+        header { background: #0f172a; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .nav-wrap { width: 88%; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 20px; letter-spacing: 1px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav li { margin-left: 20px; }
+        nav a { color: white; text-decoration: none; }
+        nav a:hover { color: #38bdf8; }
+        main { width: 88%; max-width: 1100px; margin: auto; }
+        section { background: white; padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { border-left: 5px solid #0ea5e9; padding-left: 12px; margin-top: 0; }
+        .hero { text-align: center; padding: 60px 30px; }
+        .hero img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #0ea5e9; object-fit: cover; }
+        .hero h1 span { color: #0ea5e9; }
+        .btn { display: inline-block; background: #0ea5e9; color: white; padding: 10px 24px; border-radius: 25px; text-decoration: none; margin-top: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #e2e8f0; border-radius: 10px; padding: 15px; }
+        .card img { width: 100%; height: 170px; object-fit: cover; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #e2e8f0; padding: 10px; text-align: left; }
+        th { background: #f1f5f9; }
+        figure { margin: 15px 0; }
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 25px; }
+        address { font-style: normal; line-height: 1.8; }
+        @media(max-width:700px){ .nav-wrap{flex-direction:column} nav ul{margin-top:10px} }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-wrap">
+            <div class="logo">Samiya.Khan</div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#course">My Course</a></li>
+                    <li><a href="#college">My College</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- / HOME -->
+        <section class="hero" id="home" aria-labelledby="home-heading">
+            <figure>
+                <img src="profile.jpg" alt="Portrait photo of Samiya Khan, BCA(AI) first semester student at Invertis University Bareilly smiling in formal wear">
+                <figcaption>BCA(AI) Student | Bareilly</figcaption>
+            </figure>
+            <h1 id="home-heading">Hi, I'm <span>Samiya Khan</span></h1>
+            <p>Aspiring Web Developer | BCA(AI) 1st Sem | Invertis University, Bareilly</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <article>
+                <p>I am a <strong>BCA(AI) 1st Semester</strong> student at <abbr title="Invertis University">IU</abbr>, Bareilly. I love building clean, accessible and semantic websites.</p>
+                <blockquote>"Semantic HTML is the foundation of accessibility."</blockquote>
+            </article>
+        </section>
+
+        <!-- MY COURSE -->
+        <section id="course" aria-labelledby="course-heading">
+            <h2 id="course-heading">My Course - BCA(AI)</h2>
+            <article>
+                <p><abbr title="Bachelor of Computer Applications(ARTIFICIAL INTELLIGENCE)">BCA(AI)</abbr> is a 3-year undergraduate program started in <time datetime="2026-07-18">August 2026</time>.</p>
+                <figure>
+                    <img src="bca-lab.jpg" alt="Computer lab at college with rows of desktop computers where BCA students practice coding">
+                    <figcaption>BCA(AI) Computer Lab where we practice C and Web Designing</figcaption>
+                </figure>
+                <table>
+                    <caption>BCA(AI) 1st Semester Subjects</caption>
+                    <thead>
+                        <tr><th scope="col">Code</th><th scope="col">Subject</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">BCA(AI)-101</th><td>Fundamentals of Computers</td></tr>
+                        <tr><th scope="row">BCA(AI)-102</th><td>Programming in java</td></tr>
+                        <tr><th scope="row">BCA(AI)-103</th><td>Web Designing (Links, Images, Lists)</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <!-- MY COLLEGE -->
+        <section id="college" aria-labelledby="college-heading">
+            <h2 id="college-heading">My College - IU Bareilly</h2>
+            <article>
+                <figure>
+                    <img src="ccsu-campus.jpg" alt="Wide view of Invertis University Bareilly main campus with academic blocks">
+                    <figcaption>IU Bareilly Campus - Established 1998</figcaption>
+                </figure>
+                <p>Invertis University, Bareilly is one of the largest universities in UP. Our college is affiliated to it.</p>
+                <ul>
+                    <li>Computer Labs with latest systems</li>
+                    <li>Central Library</li>
+                    <li>Wi-Fi Enabled Campus</li>
+                </ul>
+                <details>
+                    <summary>Why I chose this college?</summary>
+                    <p>Because it has experienced faculty for BCA(AI) and good placement support for IT students.</p>
+                </details>
+            </article>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="project1.jpg" alt="Screenshot of personal introduction bio-data webpage with table and profile photo">
+                    <h3>Personal Introduction Page</h3>
+                    <p>Semantic bio-data page using header, section, table, time and address tags.</p>
+                </article>
+                <article class="card">
+                    <img src="project2.jpg" alt="Screenshot of VS Code showing HTML code with links images lists folder structure">
+                    <h3>Links Images Lists</h3>
+                    <p>Learned to use safe file names like links-images-lists instead of Links,images ^& Lists.</p>
+                </article>
+                <article class="card">
+                    <img src="project3.jpg" alt="Screenshot of final portfolio page with sticky navigation bar and project cards">
+                    <h3>Final Portfolio</h3>
+                    <p>This page with full semantic containers and meaningful alt attributes for every image.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <div style="display:grid; grid-template-columns: 1.5fr 1fr; gap:20px;">
+                <article>
+                    <p>Let's connect for projects and learning!</p>
+                    <address>
+                        <strong>Samiya khan</strong><br>
+                        BCA(AI) 1st Sem, IU Bareilly<br>
+                        Email: <a href="mailto:samkhanxyzhttp@gmail.com">samkhanxyzhttp@gmail.com</a><br>
+                        Location: Bareilly, Uttar Pradesh - 243005
+                    </address>
+                </article>
+                <aside>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Semantic HTML5</li>
+                        <li>CSS3 Responsive Design</li>
+                        <li>MS Office & GitHub</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> Samiya Khan | BCA(AI) 1st Sem | Portfolio built with Semantic HTML5 | Last updated: <time datetime="2026-10-20">20 Oct 2026</time></p>
+    </footer>
+
+</body>
+</html>

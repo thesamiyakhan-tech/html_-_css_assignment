@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Login Form - Flexbox</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+.login-card{
+  background: white;
+  width: 350px;
+  padding: 35px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.login-card h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.login-card input{
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+.login-card input:focus{
+  border-color: #6366f1;
+}
+.login-card button{
+  padding: 13px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.login-card button:hover{
+  background: #4f46e5;
+}
+.bottom-text{
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+}
+.bottom-text a{
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<form class="login-card">
+  <h2>Welcome Back</h2>
+  <input type="email" placeholder="Enter your email" required>
+  <input type="password" placeholder="Enter your password" required>
+  <button type="submit">Login</button>
+  <div class="bottom-text">
+    Don't have an account? <a href="#">Sign Up</a>
+  </div>
+</form>
+
+</body>
+</html>

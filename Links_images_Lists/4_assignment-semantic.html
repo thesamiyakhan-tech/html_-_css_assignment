@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Course & My College - Samiya Khan</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+        header { background: #0f172a; color: white; padding: 25px; text-align: center; }
+        nav { margin-top: 15px; }
+        nav a { color: #38bdf8; text-decoration: none; margin: 0 12px; font-weight: 500; }
+        main { width: 85%; max-width: 1000px; margin: 30px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 25px; }
+        section { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); margin-bottom: 20px; }
+        h2 { border-left: 5px solid #0ea5e9; padding-left: 12px; color: #0f172a; }
+        figure img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #e2e8f0; padding: 10px; text-align: left; }
+        th { background: #f1f5f9; }
+        ul { padding-left: 20px; }
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 20px; margin-top: 30px; }
+        @media(max-width:800px){ main { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Course & My College</h1>
+        <p>BCA(AI) at Invertis University, Bareilly</p>
+        <nav aria-label="Main navigation">
+            <a href="#course">My Course</a>
+            <a href="#college">My College</a>
+            <a href="#why-bca">Why BCA?</a>
+            <a href="#location">Location</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LEFT SIDE MAIN CONTENT -->
+        <div>
+            <section id="course" aria-labelledby="course-heading">
+                <h2 id="course-heading">My Course - BCA(AI)</h2>
+                
+                <article>
+                    <h3>What is BCA?</h3>
+                    <p><strong><abbr title="Bachelor of Computer Applications">BCA</abbr></strong> is a 3-year undergraduate course focused on computer science and applications. It started in <time datetime="2026-18-07">August 2026</time> for me.</p>
+                    
+                    <figure>
+                        <img src="bca-lab.jpg" alt="Computer lab with students learning programming on desktop computers">
+                        <figcaption>Students practicing programming in BCA computer lab</figcaption>
+                    </figure>
+
+                    <h4>Subjects in 1st Semester</h4>
+                    <table>
+                        <caption>BCA(AI) 1st Sem Subjects List</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Subject Code</th>
+                                <th scope="col">Subject Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">BCA(AI)-101</th>
+                                <td>Full-Stack Dvevelopment</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">BCA(AI)-102</th>
+                                <td>Programming in Java</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">BCA(AI)-103</th>
+                                <td>Web Designing with HTML & CSS</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">BCA(AI)-104</th>
+                                <td>Mathematics for Computing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article id="why-bca">
+                    <h3>Why I Chose BCA(AI)?</h3>
+                    <blockquote>
+                        "BCA gives practical knowledge of coding, not just theory."
+                    </blockquote>
+                    <ul>
+                        <li>Interest in web development and coding</li>
+                        <li>Want to become a Software Developer</li>
+                        <li>Job opportunities in IT sector</li>
+                    </ul>
+                    <details>
+                        <summary>Future after BCA(AI)</summary>
+                        <p>After BCA(AI), I plan to do <mark>MCA(AI)</mark> and work as a Full-Stack Developer.</p>
+                    </details>
+                </article>
+            </section>
+
+            <section id="college" aria-labelledby="college-heading">
+                <h2 id="college-heading">My College - Invertis University</h2>
+                <article>
+                    <h3>Invertis University, Bareilly</h3>
+                    <p>My college is affiliated with <strong>invertis University Bareilly</strong>, one of the largest universities in Uttar Pradesh. Established in <time datetime="1998">1998</time>.</p>
+                    
+                    <figure>
+                        <img src="invertisunivesity-campus.jpg" alt="Main entrance gate of Invertis University Bareilly with large campus">
+                        <figcaption>Main entrance of Invertis University, Bareilly Campus</figcaption>
+                    </figure>
+
+                    <h4>Facilities in My College</h4>
+                    <ul>
+                        <li>Well-equipped Computer Labs</li>
+                        <li>Library with e-books</li>
+                        <li>Seminar Hall & Sports Ground</li>
+                        <li>No Wi-Fi Campus</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <!-- RIGHT SIDE - ASIDE -->
+        <aside>
+            <section id="profile">
+                <h2>Student Info</h2>
+                <figure>
+                    <img src="profile.jpg" alt="Student ID photo of Samiya Khan wearing college uniform">
+                    <figcaption><strong>Samiya Khan</strong></figcaption>
+                </figure>
+                <p><strong>Course:</strong> BCA(AI) 1st Sem</p>
+                <p><strong>Roll No:</strong> BCAI2026022</p>
+                <p><strong>Session:</strong> <time datetime="2025">2026-2029</time></p>
+            </section>
+
+            <section id="location" aria-labelledby="location-heading">
+                <h2 id="location-heading">Location</h2>
+                <address>
+                    Invertis University Campus,<br>
+                    Bareilly, UP - 250004<br>
+                    Email: <a href="mailto:info@invertisuniversity.ac.in">info@invertisuniversity.ac.in</a>
+                </address>
+            </section>
+
+            <section>
+                <h2>Quick Links</h2>
+                <nav aria-label="College links">
+                    <ul>
+                        <li><a href="https://ccsuniversity.ac.in" target="_blank">Official Website</a></li>
+                        <li><a href="#course">Course Details</a></li>
+                        <li><a href="#college">College Info</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> Samiya khan | BCA(AI) 1st Sem | My Course My College Assignment</p>
+    </footer>
+
+</body>
+</html>

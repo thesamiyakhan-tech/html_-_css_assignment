@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complete Portfolio Project of Aman Sharma BCA CCSU Meerut - Home About Registration Contact">
+<meta name="author" content="Samiya Khan">
+<title>Samiya Khan | Complete Project</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f1f5f9;color:#1e293b}
+header{background:#010102;color:white;padding:20px;text-align:center;position:sticky;top:0;z-index:10}
+nav a{color:#38bdf8;margin:0 12px;text-decoration:none;font-weight:bold}
+nav a:hover{color:white;text-decoration:underline}
+main{width:92%;max-width:850px;margin:20px auto}
+section{background:white;padding:25px;border-radius:12px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
+h2{border-left:5px solid #0ea5e9;padding-left:12px;margin-top:0}
+label{display:block;margin-top:14px;font-weight:bold}
+input,select,textarea{width:100%;padding:10px;margin-top:5px;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box}
+input[type="radio"],input[type="checkbox"]{width:auto}
+.btn{padding:12px 20px;background:#0ea5e9;color:white;border:none;border-radius:6px;font-size:15px;margin-top:12px;cursor:pointer;width:100%}
+.btn2{background:#64748b}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{border:1px solid #e2e8f0;padding:10px;text-align:left}
+th{background:#f1f5f9}
+footer{background:#0f172a;color:white;text-align:center;padding:20px}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+
+<header>
+<h1 style="margin:0">Samiya Khan - Complete Project</h1>
+<p style="margin:5px 0">BCA(AI) 1st Sem | IU Bareilly</p>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#registration">Registration</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<!-- HOME SECTION -->
+<section id="home">
+<h2>Home - Welcome</h2>
+<p>Hello! I am <strong>Samiya Khan</strong> from Bareilly, BCA(AI) 1st Semester student at IU University Bareilly.</p>
+<p>This is my complete HTML project with 4 pages in 1 file using semantic tags like header, nav, main, section, footer.</p>
+<p><strong>Course:</strong> BCA(AI) (Bachelor of Computer Applications in Artificial Intelligence) 2026-2029</p>
+<p><strong>Goal:</strong> To become a Web Developer</p>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+<h2>About - My Course & My College</h2>
+
+<h3>My Course: BCA(AI)</h3>
+<p>BCA(AI) is a 3-year undergraduate program focused on computer applications and software development.</p>
+<ul>
+<li>Duration: 3 Years (6 Semesters)</li>
+<li>Current: 1st Semester</li>
+<li>Subjects: C Programming, java programming, HTML, Fundamentals of Computer, Maths</li>
+</ul>
+
+<h3>My College: IU Meerut</h3>
+<p><strong>Invertis University</strong>, Bareilly - One of the top universities in UP.</p>
+<ul>
+<li>Established: 1998</li>
+<li>NAAC Grade: A++</li>
+<li>Facilities: Computer Labs, Central Library, WiFi Campus, Sports Ground</li>
+</ul>
+
+<h3>My Skills</h3>
+<ul>
+<li>HTML5 Semantic</li>
+<li>CSS3 Basic</li>
+<li>C Language</li>
+<li>MS Office</li>
+</ul>
+</section>
+
+<!-- REGISTRATION SECTION -->
+<section id="registration">
+<h2>Registration - Student Form</h2>
+<p>All input types covered here</p>
+
+<form>
+<label>Full Name (text) *</label>
+<input type="text" placeholder="Samiya Khan" required>
+
+<label>Email (email) *</label>
+<input type="email" placeholder="samkhanxyzhttp@gmail.com" required>
+
+<label>Phone (tel) *</label>
+<input type="tel" placeholder="9876543210" required>
+
+<label>Password (password) *</label>
+<input type="password" required>
+
+<label>Date of Birth (date)</label>
+<input type="date">
+
+<label>Age (number)</label>
+<input type="number" min="18" max="30" placeholder="18-30">
+
+<label>Portfolio Link (url)</label>
+<input type="url" placeholder="https://yourlink.com">
+
+<label>Course (select)</label>
+<select>
+<option>BCA(AI)</option>
+<option>BBA</option>
+<option>BSc CS</option>
+</select>
+
+<label>Gender (radio)</label>
+<div>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</div>
+
+<label>Skills (checkbox)</label>
+<div>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+<input type="checkbox"> java Programming
+</div>
+
+<label>Upload Photo (file)</label>
+<input type="file">
+
+<label>About You (textarea)</label>
+<textarea rows="4" placeholder="I am BCA(AI) student..."></textarea>
+
+<button class="btn" type="submit">Submit Registration</button>
+<button class="btn btn2" type="reset">Reset Form</button>
+</form>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+<h2>Contact - Details & Form</h2>
+
+<h3>Contact Info (Table)</h3>
+<table>
+<tr><th>Type</th><th>Detail</th></tr>
+<tr><td>Email</td><td>samkhanxyzhttp@gmail.com</td></tr>
+<tr><td>Phone</td><td>6399149462</td></tr>
+<tr><td>City</td><td>Bareilly, Uttar Pradesh</td></tr>
+<tr><td>College</td><td>IU Bareilly</td></tr>
+</table>
+
+<h3 style="margin-top:20px">Send Message</h3>
+<form>
+<label>Your Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Your Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Message</label>
+<textarea rows="4" placeholder="Write message here..." required></textarea>
+
+<button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Samiya Khan | BCA(AI) 1st Sem | IU Meerut</p>
+<p>Project: Home | About | Registration | Contact - All in One Page</p>
+</footer>
+
+</body>
+</html>

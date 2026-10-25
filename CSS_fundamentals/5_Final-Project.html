@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Final Project</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* DESIGN TOKENS */
+:root{
+  --primary:#1a2e44; --secondary:#ff6b4a; --bg:#fdf8f2;
+  --surface:#421c1c; --text:#333d4a;
+  --font-head:'Playfair Display', serif; --font-body:'Source Sans 3', sans-serif;
+}
+body{margin:0; background:var(--bg); font-family:var(--font-body); color:var(--text);}
+header{background:var(--primary); padding:15px; text-align:center; position:sticky; top:0;}
+header a{color:white; text-decoration:none; margin:0 15px; font-weight:600;}
+.container{max-width:800px; margin:30px auto; padding:0 20px;}
+.card{background:var(--surface); padding:30px; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,0.08); margin-bottom:30px;}
+h1,h2{font-family:var(--font-head); color:var(--primary);}
+h1{font-size:36px;} h2{font-size:24px; color:var(--secondary); text-transform:uppercase;}
+.btn{background:var(--secondary); color:white; padding:10px 20px; border-radius:6px; text-decoration:none; display:inline-block;}
+.note{border-left:5px solid var(--secondary); background:#fffbe6;}
+html{scroll-behavior:smooth;}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#resume">Resume</a>
+  <a href="#design-note">Design Note</a>
+</header>
+
+<div class="container">
+
+  <!-- PAGE 1: HOME -->
+  <div id="home" class="card">
+    <h1>Hi, I'm Samiya Khan</h1>
+    <p>BCA(AI) Student</p>
+    <p>This is a lightly styled multi-page project. All pages use same design tokens.</p>
+    <a href="#resume" class="btn">View My Resume</a>
+  </div>
+
+  <!-- PAGE 2: ABOUT -->
+  <div id="about" class="card">
+    <h2>About Me - Page 2</h2>
+    <p>I am a BCA(AI) student from Bareilly. I am learning HTML, CSS, and UI design.</p>
+    <p><strong>Skills:</strong> HTML5, CSS, JavaScript, Java Programming</p>
+  </div>
+
+  <!-- PAGE 3: RESUME -->
+  <div id="resume" class="card">
+    <h2>Resume - Page 3</h2>
+    <p><strong>Samiya Khan</strong> - samkhanxyzhttp@email.com | Bareilly, UP</p>
+    <p><strong>Education:</strong> BCA(AI), Invertis University (2026-29) - CGPA 9.8</p>
+    <p><strong>Projects:</strong> Portfolio Website, Design Token System</p>
+  </div>
+
+  <!-- DESIGN NOTE -->
+  <div id="design-note" class="card note">
+    <h2>Task 25: Design Choices Note</h2>
+    <p><strong>1. Font Pairing:</strong> Playfair Display (Serif for headings - professional) + Source Sans 3 (Sans for body - readable). This contrast makes it elegant.</p>
+    <p><strong>2. Colour Palette:</strong> Navy #1a2e44 for trust, Orange #ff6b4a for CTA/highlight, Beige #fdf8f2 for soft background, Dark Gray for text (easy on eyes than pure black).</p>
+    <p><strong>3. System:</strong> All colours/fonts managed via :root CSS variables. One style.css for all pages = consistency and easy update.</p>
+    <p><strong>4. Layout:</strong> 800px centered container + card with shadow for modern clean look.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - BCA(AI) 1st Sem</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f1f5f9; margin: 0; color: #1e293b; }
+        header { background: #0f172a; color: white; text-align: center; padding: 25px; }
+        main { width: 90%; max-width: 750px; margin: 30px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        h2 { border-left: 5px solid #0ea5e9; padding-left: 12px; }
+        fieldset { border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; margin-bottom: 25px; }
+        legend { font-weight: bold; padding: 0 10px; color: #0f172a; }
+        label { display: block; margin-top: 15px; font-weight: 500; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+        input[type="radio"], input[type="checkbox"] { width: auto; margin-right: 8px; }
+        .inline { display: flex; gap: 20px; margin-top: 8px; }
+        .inline label { margin-top: 0; font-weight: normal; display: flex; align-items: center; }
+        button { background: #0ea5e9; color: white; border: none; padding: 12px 30px; border-radius: 25px; font-size: 16px; cursor: pointer; width: 100%; margin-top: 10px; }
+        button:hover { background: #0284c7; }
+        figure img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #0ea5e9; }
+        footer { text-align: center; padding: 20px; color: #64748b; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <figure>
+            <img src="profile.jpg" alt="College admission office logo showing registration form icon">
+            <figcaption><strong>Student Registration Form</strong></figcaption>
+        </figure>
+        <h1>BCA(AI) Admission 2026-27</h1>
+        <p>Invertis University - Bareilly</p>
+    </header>
+
+    <main>
+        <form action="#" method="post" aria-labelledby="form-heading">
+            <h2 id="form-heading">Registration Details</h2>
+
+            <!-- 1. PERSONAL DETAILS -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Samiya Khan" required>
+
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="16" max="30" placeholder="e.g. 18">
+
+                <label>Gender *</label>
+                <div class="inline">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+
+                <label for="photo">Upload Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+            </fieldset>
+
+            <!-- 2. COURSE DETAILS -->
+            <fieldset>
+                <legend>Course Information</legend>
+
+                <label for="course">Select Course *</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="bca" selected>BCA(AI) - Bachelor of Computer Applications(ARTIFICIAL INTELLIGENCE)</option>
+                    <option value="bba">BBA</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="bsc">B.Sc Computer Science</option>
+                </select>
+
+                <label for="semester">Semester</label>
+                <select id="semester" name="semester">
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                </select>
+
+                <label>Subjects Interested (You can select multiple)</label>
+                <div class="inline">
+                    <label><input type="checkbox" name="subjects" value="html"> HTML/CSS</label>
+                    <label><input type="checkbox" name="subjects" value="c"> C Programming</label>
+                    <label><input type="checkbox" name="subjects" value="python"> Python</label>
+                </div>
+            </fieldset>
+
+            <!-- 3. CONTACT DETAILS -->
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <label for="email">Email ID *</label>
+                <input type="email" id="email" name="email" placeholder="samkhanxyzhttp@gmail.com" required>
+
+                <label for="phone">Mobile Number *</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number" required>
+
+                <label for="password">Create Password *</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="House No, Street, City - Bareilly, UP"></textarea>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" value="Bareilly">
+
+                <label for="pincode">Pincode</label>
+                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="e.g. 243005">
+
+            </fieldset>
+
+            <label><input type="checkbox" name="terms" required> I declare that all information is true *</label>
+
+            <button type="submit">Register Now</button>
+            <button type="reset" style="background:#64748b; margin-top:10px;">Reset Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> IU University, Bareilly | Student Registration Form with Basic Input Types</p>
+    </footer>
+
+</body>
+</html>
